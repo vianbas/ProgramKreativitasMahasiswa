@@ -1,0 +1,512 @@
+2016-04-14 04:22:13 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'auth_rule' already exists in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Command.php:784
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Command.php(784): PDOStatement->execute()
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(59): yii\db\Migration->createTable('{{%auth_rule}}', Array, 'CHARACTER SET u...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(562): m140506_102106_rbac_init->up()
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(151): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'auth_rule' already exists
+The SQL being executed was: CREATE TABLE `auth_rule` (
+	`name` varchar(64) NOT NULL,
+	`data` text,
+	`created_at` int(11),
+	`updated_at` int(11),
+	PRIMARY KEY (name)
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Schema.php:628
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Command.php(794): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `a...')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\Migration.php(260): yii\db\Command->execute()
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(59): yii\db\Migration->createTable('{{%auth_rule}}', Array, 'CHARACTER SET u...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(562): m140506_102106_rbac_init->up()
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(151): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'auth_rule' already exists
+)
+
+2016-04-14 04:22:06 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit Reader\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460600526.8543
+    'REQUEST_TIME' => 1460600526
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2016-04-14 07:14:05 [-][-][-][error][yii\console\Exception] yii\base\InvalidRouteException: Unable to resolve the request "m151008_162401_create_notification_table/up". in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('m151008_162401_...', Array)
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('m151008_162401_...', Array)
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\Exception: Unknown command "m151008_162401_create_notification_table/up". in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php:169
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('m151008_162401_...', Array)
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#3 {main}
+2016-04-14 07:14:04 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610844.9788
+    'REQUEST_TIME' => 1460610844
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'm151008_162401_create_notification_table/up'
+    ]
+    'argc' => 2
+]
+2016-04-14 07:15:08 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: @console/controller in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\MigrateController.php(104): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#8 {main}
+2016-04-14 07:15:08 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610908.0053
+    'REQUEST_TIME' => 1460610908
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@console/controller'
+    ]
+    'argc' => 3
+]
+2016-04-14 07:15:45 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: @console/controller/m151008_162401_create_notification_table.php in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\MigrateController.php(104): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#8 {main}
+2016-04-14 07:15:45 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610945.6293
+    'REQUEST_TIME' => 1460610945
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@console/controller/m151008_162401_create_notification_table.php'
+    ]
+    'argc' => 3
+]
+2016-04-14 07:15:54 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: console/controller/m151008_162401_create_notification_table.php in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\MigrateController.php(104): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#8 {main}
+2016-04-14 07:15:54 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610954.5114
+    'REQUEST_TIME' => 1460610954
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=console/controller/m151008_162401_create_notification_table.php'
+    ]
+    'argc' => 3
+]
+2016-04-14 07:16:09 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: console/controllers/m151008_162401_create_notification_table.php in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\MigrateController.php(104): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#8 {main}
+2016-04-14 07:16:09 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610969.8039
+    'REQUEST_TIME' => 1460610969
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=console/controllers/m151008_162401_create_notification_table.php'
+    ]
+    'argc' => 3
+]
+2016-04-14 07:16:13 [-][-][-][error][yii\console\Exception] yii\console\Exception: Migration failed. Directory specified in migrationPath doesn't exist: console/controllers/m151008_162401_create_notification_table in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php:91
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\controllers\MigrateController.php(104): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Controller.php(108): yii\base\Controller->runAction('', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(167): yii\base\Module->runAction('migrate', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 C:\xampp\htdocs\PKM\yii(27): yii\base\Application->run()
+#8 {main}
+2016-04-14 07:16:13 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Aditya\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-SEOBD6C'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Aditya'
+    'LOCALAPPDATA' => 'C:\\Users\\Aditya\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-SEOBD6C'
+    'MOZ_PLUGIN_PATH' => 'C:\\Program Files (x86)\\Foxit Software\\Foxit PhantomPDF\\plugins\\'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3c03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Aditya\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-SEOBD6C'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-SEOBD6C'
+    'USERNAME' => 'Aditya'
+    'USERPROFILE' => 'C:\\Users\\Aditya'
+    'VS110COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\PKM\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\PKM\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1460610973.6039
+    'REQUEST_TIME' => 1460610973
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\PKM\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=console/controllers/m151008_162401_create_notification_table'
+    ]
+    'argc' => 3
+]

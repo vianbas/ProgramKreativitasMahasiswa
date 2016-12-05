@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+}
+
+.post-wrapper-0{    
+    padding-left: 0px;
+}
+.post-wrapper-1{    
+    padding-left: 15px;
+}
+.post-wrapper-2{    
+    padding-left: 25px;
+}
+.post-wrapper-3{    
+    padding-left: 35px;
+}
+.post-wrapper-4{    
+    padding-left: 45px;
+}
+.post-wrapper-5{    
+    padding-left: 55px;
+}
+.post-wrapper-6{    
+    padding-left: 65px;
+}
+.post-wrapper-7{    
+    padding-left: 75px;
+}
+.post-wrapper-8{    
+    padding-left: 85px;
+}
+.post-wrapper-9{    
+    padding-left: 95px;
+}
+.post-wrapper-10{    
+    padding-left: 105px;
+}
+.post-wrapper-11{    
+    padding-left: 115px;
+}
+.post-wrapper-12{    
+    padding-left: 125px;
+}
+.post-wrapper-13{    
+    padding-left: 135px;
+}
+.post-wrapper-14{    
+    padding-left: 145px;
+}
+.post-wrapper-15{    
+    padding-left: 155px;
+}
+.post-wrapper-16{    
+    padding-left: 165px;
+}
+
+
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav > li > form {
+    padding: 8px;
+}
+
+.nav > li > form > button:hover {
+    text-decoration: none;
+}

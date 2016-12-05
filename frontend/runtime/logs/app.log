@@ -1,0 +1,1023 @@
+2016-06-23 05:46:03 [::1][10][8uhcodqb35p28vr32t59hcr5i2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xampp\htdocs\PKM\frontend\views\layouts\dropdown.php:22
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\layouts\dropdown.php(22): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\PKM\frontend\views\layouts\header.php(40): yii\base\View->render('dropdown.php', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#8 C:\xampp\htdocs\PKM\frontend\views\layouts\main.php(56): yii\base\View->render('header.php', Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('\n\n<div class="s...')
+#13 C:\xampp\htdocs\PKM\frontend\controllers\SiteController.php(111): yii\base\Controller->render('index', Array)
+#14 [internal function]: frontend\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-23 05:46:03 [::1][10][8uhcodqb35p28vr32t59hcr5i2][info][application] $_COOKIE = [
+    '_csrf' => '75709d953058bbb7e78c4df2a0293d2c46e6d6a25e33facd5ce34eda30e09662a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"08us-bGeQNCHRyrQFnCbY4ahkufx5q5S\";}'
+    'PHPSESSID' => '8uhcodqb35p28vr32t59hcr5i2'
+    '_identity' => 'ac3aef3b9b9428fb2d42843fda81459049e4e2737b4bdf1cc66f64ecd5ef773fa:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[10,\"1xGqCFErYhwT_yN8MhaJfIQGrg5EzBzN\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=75709d953058bbb7e78c4df2a0293d2c46e6d6a25e33facd5ce34eda30e09662a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2208us-bGeQNCHRyrQFnCbY4ahkufx5q5S%22%3B%7D; PHPSESSID=8uhcodqb35p28vr32t59hcr5i2; _identity=ac3aef3b9b9428fb2d42843fda81459049e4e2737b4bdf1cc66f64ecd5ef773fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%221xGqCFErYhwT_yN8MhaJfIQGrg5EzBzN%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pkm/frontend/web/index.php'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466653563.714
+    'REQUEST_TIME' => 1466653563
+]
+2016-06-23 05:46:13 [::1][10][8uhcodqb35p28vr32t59hcr5i2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xampp\htdocs\PKM\frontend\views\layouts\dropdown.php:22
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\layouts\dropdown.php(22): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\PKM\frontend\views\layouts\header.php(40): yii\base\View->render('dropdown.php', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#8 C:\xampp\htdocs\PKM\frontend\views\layouts\main.php(56): yii\base\View->render('header.php', Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('\n\n<div class="s...')
+#13 C:\xampp\htdocs\PKM\frontend\controllers\SiteController.php(111): yii\base\Controller->render('index', Array)
+#14 [internal function]: frontend\controllers\SiteController->actionIndex()
+#15 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#19 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2016-06-23 05:46:13 [::1][10][8uhcodqb35p28vr32t59hcr5i2][info][application] $_COOKIE = [
+    '_csrf' => '75709d953058bbb7e78c4df2a0293d2c46e6d6a25e33facd5ce34eda30e09662a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"08us-bGeQNCHRyrQFnCbY4ahkufx5q5S\";}'
+    'PHPSESSID' => '8uhcodqb35p28vr32t59hcr5i2'
+    '_identity' => 'ac3aef3b9b9428fb2d42843fda81459049e4e2737b4bdf1cc66f64ecd5ef773fa:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[10,\"1xGqCFErYhwT_yN8MhaJfIQGrg5EzBzN\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 10
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=75709d953058bbb7e78c4df2a0293d2c46e6d6a25e33facd5ce34eda30e09662a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2208us-bGeQNCHRyrQFnCbY4ahkufx5q5S%22%3B%7D; PHPSESSID=8uhcodqb35p28vr32t59hcr5i2; _identity=ac3aef3b9b9428fb2d42843fda81459049e4e2737b4bdf1cc66f64ecd5ef773fa%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B10%2C%221xGqCFErYhwT_yN8MhaJfIQGrg5EzBzN%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52095'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pkm/frontend/web/index.php'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466653573.68
+    'REQUEST_TIME' => 1466653573
+]
+2016-06-23 05:59:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$this' (T_VARIABLE)' in C:\xampp\htdocs\PKM\frontend\views\announcement\index.php:10
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-23 05:59:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'announcement'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52280'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654367.836
+    'REQUEST_TIME' => 1466654367
+]
+2016-06-23 06:00:01 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::topic' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\announcement\index.php(10): yii\base\Component->__get('topic')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\AnnouncementController))
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(frontend\controllers\AnnouncementController))
+#5 C:\xampp\htdocs\PKM\frontend\controllers\AnnouncementController.php(41): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\AnnouncementController->actionIndex()
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('announcement', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-06-23 06:00:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'announcement'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654401.814
+    'REQUEST_TIME' => 1466654401
+]
+2016-06-23 06:00:28 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::topic' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\announcement\index.php(10): yii\base\Component->__get('topic')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\AnnouncementController))
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(frontend\controllers\AnnouncementController))
+#5 C:\xampp\htdocs\PKM\frontend\controllers\AnnouncementController.php(41): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\AnnouncementController->actionIndex()
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('announcement', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-06-23 06:00:28 [::1][-][-][info][application] $_GET = [
+    'r' => 'announcement'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52293'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654428.36
+    'REQUEST_TIME' => 1466654428
+]
+2016-06-23 06:00:30 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::topic' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\announcement\index.php(10): yii\base\Component->__get('topic')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\AnnouncementController))
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(frontend\controllers\AnnouncementController))
+#5 C:\xampp\htdocs\PKM\frontend\controllers\AnnouncementController.php(41): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\AnnouncementController->actionIndex()
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('announcement', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-06-23 06:00:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'announcement'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52295'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654430.793
+    'REQUEST_TIME' => 1466654430
+]
+2016-06-23 06:01:24 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\web\View::topic' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\announcement\index.php(10): yii\base\Component->__get('topic')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\AnnouncementController))
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('index', Array, Object(frontend\controllers\AnnouncementController))
+#5 C:\xampp\htdocs\PKM\frontend\controllers\AnnouncementController.php(41): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\AnnouncementController->actionIndex()
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('announcement', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-06-23 06:01:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'announcement'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52315'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654484.902
+    'REQUEST_TIME' => 1466654484
+]
+2016-06-23 06:03:15 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Thread::title' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('title')
+#1 C:\xampp\htdocs\PKM\frontend\views\thread\view.php(10): yii\db\BaseActiveRecord->__get('title')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ThreadController))
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\ThreadController))
+#6 C:\xampp\htdocs\PKM\frontend\controllers\ThreadController.php(56): yii\base\Controller->render('view', Array)
+#7 [internal function]: frontend\controllers\ThreadController->actionView('13')
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('thread/view', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-06-23 06:03:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'thread/view'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=forum%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52344'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=thread%2Fview&id=13'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=thread%2Fview&id=13'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654594.996
+    'REQUEST_TIME' => 1466654594
+]
+2016-06-23 06:04:22 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Thread::title' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('title')
+#1 C:\xampp\htdocs\PKM\frontend\views\thread\view.php(10): yii\db\BaseActiveRecord->__get('title')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ThreadController))
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\ThreadController))
+#6 C:\xampp\htdocs\PKM\frontend\controllers\ThreadController.php(56): yii\base\Controller->render('view', Array)
+#7 [internal function]: frontend\controllers\ThreadController->actionView('13')
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('thread/view', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-06-23 06:04:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'thread/view'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52349'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=thread%2Fview&id=13'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=thread%2Fview&id=13'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654662.752
+    'REQUEST_TIME' => 1466654662
+]
+2016-06-23 06:06:57 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Thread::topic' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('topic')
+#1 C:\xampp\htdocs\PKM\frontend\views\thread\view.php(10): yii\db\BaseActiveRecord->__get('topic')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ThreadController))
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\ThreadController))
+#6 C:\xampp\htdocs\PKM\frontend\controllers\ThreadController.php(56): yii\base\Controller->render('view', Array)
+#7 [internal function]: frontend\controllers\ThreadController->actionView('13')
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('thread/view', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-06-23 06:06:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'thread/view'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=forum%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52388'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=thread%2Fview&id=13'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=thread%2Fview&id=13'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654817.193
+    'REQUEST_TIME' => 1466654817
+]
+2016-06-23 06:08:24 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: frontend\models\Thread::title' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('title')
+#1 C:\xampp\htdocs\PKM\frontend\views\thread\view.php(10): yii\db\BaseActiveRecord->__get('title')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\ThreadController))
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\ThreadController))
+#6 C:\xampp\htdocs\PKM\frontend\controllers\ThreadController.php(56): yii\base\Controller->render('view', Array)
+#7 [internal function]: frontend\controllers\ThreadController->actionView('13')
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('thread/view', Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2016-06-23 06:08:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'thread/view'
+    'id' => '13'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '78ugnmh11n9nb0464elg048rq2'
+    '_identity' => 'c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[11,\"rjwV3RWkSJiqExUUBc5San7ewFytEUmm\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=forum%2Fview&id=6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=78ugnmh11n9nb0464elg048rq2; _identity=c73061715c5f96ab815844ac60165e9c8b1fffc966992c699715dbaabf3b811da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B11%2C%22rjwV3RWkSJiqExUUBc5San7ewFytEUmm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '52401'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=thread%2Fview&id=13'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=thread%2Fview&id=13'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466654904.154
+    'REQUEST_TIME' => 1466654904
+]
+2016-06-23 06:57:13 [::1][12][skfhcqeqvdlbltd7em18efacc3][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' in C:\xampp\htdocs\PKM\frontend\controllers\AnnouncementController.php:141
+Stack trace:
+#0 [internal function]: frontend\controllers\AnnouncementController->actionUpdate('1')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('update', Array)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('announcement/up...', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2016-06-23 06:57:13 [::1][12][skfhcqeqvdlbltd7em18efacc3][info][application] $_GET = [
+    'r' => 'announcement/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => 'skfhcqeqvdlbltd7em18efacc3'
+    '_identity' => '34e615ce1dd43e33c5bb42bc0bd9f68584c2612ab57bdb2a6487d382274ea4d6a:2:{i:0;s:9:\"_identity\";i:1;s:47:\"[12,\"ZhNg7RLpUOY7-9KQg1ezJ8qwKIKsRr9z\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=announcement%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=skfhcqeqvdlbltd7em18efacc3; _identity=34e615ce1dd43e33c5bb42bc0bd9f68584c2612ab57bdb2a6487d382274ea4d6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A47%3A%22%5B12%2C%22ZhNg7RLpUOY7-9KQg1ezJ8qwKIKsRr9z%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '53265'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=announcement%2Fupdate&id=1'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=announcement%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466657833.367
+    'REQUEST_TIME' => 1466657833
+]
+2016-06-23 07:04:06 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xampp\htdocs\PKM\frontend\views\category\view_detail.php:3
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\category\view_detail.php(3): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\widgets\ListView.php(100): yii\base\View->render('view_detail', Array)
+#5 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\widgets\ListView.php(77): yii\widgets\ListView->renderItem(Object(common\models\category\CategoryInformation), 11, 0)
+#6 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\widgets\ListView->renderItems()
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\widgets\BaseListView->renderSection('{items}')
+#8 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Widget.php(98): yii\widgets\BaseListView->run()
+#11 C:\xampp\htdocs\PKM\frontend\views\category\view.php(144): yii\base\Widget::widget(Array)
+#12 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\CategoryController))
+#15 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\CategoryController))
+#16 C:\xampp\htdocs\PKM\frontend\controllers\CategoryController.php(33): yii\base\Controller->render('view', Array)
+#17 [internal function]: frontend\controllers\CategoryController->actionCategory('3')
+#18 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('category', Array)
+#21 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('category/catego...', Array)
+#22 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#24 {main}
+2016-06-23 07:04:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'category/category'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '1pi6dkartprdmpsutrrvnace73'
+    '_identity' => '2d93811f3aaef1ee603c77e26236f47c2bc6f724ee172b2c980d2cfc06205563a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[9,\"DUWbi6susizZ9IxLLKVrpWSn_TaJY7Ui\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=1pi6dkartprdmpsutrrvnace73; _identity=2d93811f3aaef1ee603c77e26236f47c2bc6f724ee172b2c980d2cfc06205563a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B9%2C%22DUWbi6susizZ9IxLLKVrpWSn_TaJY7Ui%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '53359'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fcategory&id=3'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=category%2Fcategory&id=3'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466658246.129
+    'REQUEST_TIME' => 1466658246
+]
+2016-06-23 08:29:27 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: yii\data\ActiveDataProvider::category_name' in C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\PKM\frontend\views\category\view.php(4): yii\base\Component->__get('category_name')
+#1 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\CategoryController))
+#4 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(377): yii\base\View->render('view', Array, Object(frontend\controllers\CategoryController))
+#5 C:\xampp\htdocs\PKM\frontend\controllers\CategoryController.php(33): yii\base\Controller->render('view', Array)
+#6 [internal function]: frontend\controllers\CategoryController->actionCategory('2')
+#7 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('category', Array)
+#10 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('category/catego...', Array)
+#11 C:\xampp\htdocs\PKM\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\PKM\frontend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2016-06-23 08:29:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'category/category'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aAsYJdtheqzqCLMU3zA-nBjShURpGHzf\";}'
+    'PHPSESSID' => '1pi6dkartprdmpsutrrvnace73'
+    '_identity' => '2d93811f3aaef1ee603c77e26236f47c2bc6f724ee172b2c980d2cfc06205563a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[9,\"DUWbi6susizZ9IxLLKVrpWSn_TaJY7Ui\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 UBrowser/5.6.13108.1201 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/pkm/frontend/web/index.php?r=category%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=9aeb53bf14a832969b1e8cb9e86fdcae9d1c76871c4236f0ecfbd061a35e7429a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aAsYJdtheqzqCLMU3zA-nBjShURpGHzf%22%3B%7D; PHPSESSID=1pi6dkartprdmpsutrrvnace73; _identity=2d93811f3aaef1ee603c77e26236f47c2bc6f724ee172b2c980d2cfc06205563a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B9%2C%22DUWbi6susizZ9IxLLKVrpWSn_TaJY7Ui%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Lenovo\\Bluetooth Software\\;C:\\Program Files\\Lenovo\\Bluetooth Software\\syswow64;;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Microsoft ASP.NET\\ASP.NET Web Pages\\v1.0\\;C:\\Program Files (x86)\\Windows Kits\\8.0\\Windows Performance Toolkit\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Java\\jdk1.8.0_74\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\vianbas\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.20'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/PKM/frontend/web/index.php'
+    'REMOTE_PORT' => '53542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=category%2Fcategory&id=2'
+    'REQUEST_URI' => '/pkm/frontend/web/index.php?r=category%2Fcategory&id=2'
+    'SCRIPT_NAME' => '/pkm/frontend/web/index.php'
+    'PHP_SELF' => '/pkm/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466663367.496
+    'REQUEST_TIME' => 1466663367
+]
