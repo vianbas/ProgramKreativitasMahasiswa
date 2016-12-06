@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=program_kreatifitas_mahasiswa',
-            'username' => 'root',
-            'password' => '',
+			'dsn' => 'mysql:host=ap-cdbr-azure-southeast-b.cloudapp.net;dbname=pkm_db',
+            'username' => 'bb3f8d584c78f6',
+            'password' => 'e681ef61',
             'charset' => 'utf8',
         ],
         'mailer' => [
